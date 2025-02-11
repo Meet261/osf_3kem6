@@ -1,12 +1,66 @@
 
-==== [PROJECT INIT] ====
-[2025-02-03 16:14:56] 🚀 Starting processing for project '3kem6'
+==== [REPO2DOCKER SETUP] ====
+[2025-02-03 16:15:12] ✅ Repo2Docker files created successfully.
 ========================================
 
-==== [DOWNLOAD] ====
-[2025-02-03 16:15:03] ✅ Project downloaded successfully.
+==== [CONTAINER SETUP] ====
+[2025-02-03 16:15:12] ⚙️ Building Docker container...
 ========================================
 
-==== [DEPENDENCY EXTRACTION] ====
-[2025-02-03 16:15:11] ✅ Dependencies extracted successfully.
+==== [CONTAINER SETUP] ====
+[2025-02-03 16:20:29] ⚙️ Building Docker container...
+========================================
+
+==== [CONTAINER BUILD] ====
+[2025-02-03 16:20:30] ✅ Container built successfully.
+========================================
+
+==== [CONTAINER RUN] ====
+[2025-02-03 16:20:30] ✅ Container is running.
+========================================
+File: /data/repo2docker/Rcode_Figure2.R
+Execution Failed:
+Loading required package: qgraph
+Error: package or namespace load failed for ‘qgraph’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/srv/rlibs/igraph/libs/igraph.so':
+  libglpk.so.40: cannot open shared object file: No such file or directory
+Installing package into ‘/srv/rlibs’
+(as ‘lib’ is unspecified)
+trying URL 'https://packagemanager.posit.co/all/__linux__/jammy/2025-02-01+LkwQF6Za/src/contrib/qgraph_1.9.8.tar.gz'
+Content type 'binary/octet-stream' length 657220 bytes (641 KB)
+==================================================
+downloaded 641 KB
+
+* installing *binary* package ‘qgraph’ ...
+* DONE (qgraph)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp2IvzOl/downloaded_packages’
+Loading required package: qgraph
+Error: package or namespace load failed for ‘qgraph’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/srv/rlibs/igraph/libs/igraph.so':
+  libglpk.so.40: cannot open shared object file: No such file or directory
+Loading required package: qgraph
+Error: package or namespace load failed for ‘qgraph’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/srv/rlibs/igraph/libs/igraph.so':
+  libglpk.so.40: cannot open shared object file: No such file or directory
+Installing package into ‘/srv/rlibs’
+(as ‘lib’ is unspecified)
+trying URL 'https://packagemanager.posit.co/all/__linux__/jammy/2025-02-01+LkwQF6Za/src/contrib/qgraph_1.9.8.tar.gz'
+Content type 'binary/octet-stream' length 657220 bytes (641 KB)
+==================================================
+downloaded 641 KB
+
+* installing *binary* package ‘qgraph’ ...
+* DONE (qgraph)
+
+The downloaded source packages are in
+	‘/tmp/Rtmp2IvzOl/downloaded_packages’
+Loading required package: qgraph
+Error: package or namespace load failed for ‘qgraph’ in dyn.load(file, DLLpath = DLLpath, ...):
+ unable to load shared object '/srv/rlibs/igraph/libs/igraph.so':
+  libglpk.so.40: cannot open shared object file: No such file or directory
+Error in qgraph(adj_matrix_c) : could not find function "qgraph"
+Execution halted
+
 ========================================
