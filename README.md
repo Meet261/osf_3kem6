@@ -41,12 +41,12 @@ In addition to launching this project using Binder or NFDI JupyterHub, you can r
 **Pull the Docker Image**
 
 ```bash
-docker pull meet261/osf-3kem6:latest
+docker pull meet261/repo2docker-3kem6:latest
 ```
 
 **Launch RStudio Server**
 
 ```bash
-docker run -e PASSWORD=yourpassword -p 8787:8787 meet261/osf-3kem6
+docker run -e PASSWORD=yourpassword -p 8787:8787 meet261/repo2docker-3kem6
 ```
 **Once the container is running, copy the given URL and paste it into your browser.**
