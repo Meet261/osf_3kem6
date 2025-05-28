@@ -3,8 +3,8 @@
 echo "Checking if FlowR should be installed..."
 
 if [ "$ENABLE_FLOWR" = "true" ]; then
-  echo "ENABLE_FLOWR is set to true — installing FlowR v0.1.2..."
-  Rscript -e "if (!requireNamespace('remotes', quietly = TRUE)) install.packages('remotes', repos = 'https://cloud.r-project.org'); remotes::install_version('flowr', version = '0.1.2', repos = 'https://cloud.r-project.org')"
+  echo "ENABLE_FLOWR is set to true — installing FlowR from GitHub tag v0.1.2..."
+  Rscript -e "if (!requireNamespace('remotes', quietly = TRUE)) install.packages('remotes', repos = 'https://cloud.r-project.org'); remotes::install_github('flow-r/flowr@v0.1.2')"
 else
   echo "ENABLE_FLOWR not set or not 'true' — skipping FlowR installation."
 fi
