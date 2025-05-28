@@ -2,4 +2,4 @@
 
 echo "Installing FlowR v0.1.2..."
 
-Rscript -e "if (!requireNamespace('remotes', quietly = TRUE)) install.packages('remotes', repos = 'https://cloud.r-project.org'); remotes::install_version('flowr', version = '0.1.2', repos = 'https://cloud.r-project.org')"
+ Rscript -e "if (!requireNamespace('remotes', quietly = TRUE)) install.packages('remotes', repos = 'https://cloud.r-project.org'); remotes::install_github('flow-r/flowr@v0.1.2')"
