@@ -1,5 +1,10 @@
 #!/bin/bash
 
-echo "Installing flowr addin from GitHub @ v0.1.2..."
+echo "Checking if FlowR should be installed..."
 
-Rscript -e "if (!requireNamespace('remotes', quietly = TRUE)) install.packages('remotes', repos = 'https://cloud.r-project.org'); remotes::install_github('flowr-analysis/rstudio-addin-flowr@v0.1.2')"
+if [ "$ENABLE_FLOWR" = "true" ]; then
+  echo "ENABLE_FLOWR is set to true — installing FlowR..."
+  Rscript -e "remotes::install_github('flowr-analysis/rstudio-addin-flowr@v0.1.2')"
+else
+  echo "ENABLE_FLOWR not set or not 'true' — skipping FlowR installation."
+fi
